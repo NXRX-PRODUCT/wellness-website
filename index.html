@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Wellness Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Student Wellness Tracker</h1>
+        <h2>Track your daily habits, journal your mood, and get motivated!</h2>
+    </header>
+        
+    <main>
+        <section id="checklist">
+            <h2>Daily Wellness Checklist</h2>
+            <form id="add-item-form">
+                <input type="text" id="new-item-text" placeholder="Add your own habit or reminder..." maxlength="40" required>
+                <button type="submit">Add</button>
+            </form>
+            <ul id="checklist-list"></ul>            
+        </section>
+        
+        <section id="mood-journal">
+            <h2>Mood Journal</h2>
+            <textarea id="journal-entry" placeholder="How are you feeling today? Write your thoughts here..."></textarea>
+            <button id="save-journal">Save Entry</button>
+            <div id="journal-entries"></div>
+        </section>
+        
+        <section id="motivation">
+            <h2>Daily Motivational Message</h2>
+            <p id="motivational-message"></p>
+            <button id="new-message">Get New Message</button>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
